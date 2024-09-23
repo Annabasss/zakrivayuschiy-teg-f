@@ -41,6 +41,8 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
+
 .header {
   font-family: var(--fantasy-font-family);
   text-align: center;
@@ -49,22 +51,29 @@
   background: var(--header-background);
   border: 2px solid var(--stroke-color);
 }
+
+
 .header__link {
   font-size: clamp(3.063rem, 2.348rem + 1.905vw, 4.063rem);
   text-transform: uppercase;
   text-decoration: none
 }
+
+
 .header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   margin: 20px 0px 25px;
 }
 
+
 @media (width <= 375px) {
   .header {
     padding: 120px 0 24px;
   }
 }
+
+
 .theme-menu__list {
   font-size: 14px;
   display: flex;
@@ -75,11 +84,13 @@
   margin: 0 45%;
 }
 
+
 @media (width <= 375px) {
   .theme-menu__list {
     margin: 0 41.1%;
   }
 }
+
 
 .theme-menu__button {
   padding: 0;
@@ -92,16 +103,19 @@
   cursor: pointer;
 }
 
+
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
 }
+
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
   left: -15px;
 }
+
 
 .theme-menu__button::after {
   content: "";
@@ -113,51 +127,68 @@
   transition: transform 0.3s ease;
   transform: translateX(-100%);
 }
+
+
 .theme-menu__button:hover {
   opacity: 0.6;
 }
+
 
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
 }
 
+
 .theme-menu__button:focus-visible {
   opacity: 0.6;
 }
+
 
 .theme-menu__button:focus-visible::after {
   transform: translateX(0);
 }
 
+
 .theme-menu__item {
   position: relative;
 }
+
 
 main {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
+
 .section {
   display: inherit;
   flex-direction: inherit;
   gap: inherit;
 }
+
+
 .card {
   border: 2px solid var(--stroke-color);
   background: var(--header-background);
 }
+
+
 .card__title {
   font-size: 18px;
   font-variation-settings: var(--title-font-weight);
   padding: 4px 10px;
 }
+
+
 .card__image {
   display: block;
   object-fit: cover;
   object-position: center center;
 }
+
+
 .card__image-container {
   position: relative;
   overflow: hidden;
@@ -165,6 +196,8 @@ main {
   border-bottom: 2px solid var(--stroke-color);
   
 }
+
+
 .image-label {
   font-family: var(--fantasy-font-family);
   font-size: 14px;
@@ -177,39 +210,50 @@ main {
   right: 25px;
   top: 27px;
 }
+
+
 @media (width <= 375px) {
   .image-label {
     right: 10px;
     top: 24px;
   }
 }
+
+
 .grayscale {
   filter: grayscale(50%);
 }
+
 
 .hue-rotate {
   filter: hue-rotate(30deg);
 }
 
+
 .saturate {
   filter: saturate(360%);
 }
+
 
 .invert {
   filter: invert(80%);
 }
 
+
 .sepia {
   filter: sepia(80%);
 }
+
 
 .blur {
   filter: blur(20px);
 }
 
+
 .multi-filter {
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
+
 
 .card__text-container {
   font-size: 18px;
@@ -219,12 +263,16 @@ main {
   gap: 26px;
   line-height: 21px;
 }
+
+
 .card__like-button-container {
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 6px;
 }
+
+
 .card__icon-button {
   padding: 0;
   width: 39px;
@@ -234,23 +282,30 @@ main {
   cursor: pointer;
 }
 
+
 .card__icon-button:focus {
   outline: none;
 }
 
+
 .card__icon-button:focus-visible {
   outline: 2px solid var(--stroke-color);
 }
+
+
 .card__like-button {
   width: 130px;
   padding: 10px 0px;
 }
+
 
 @media (width <= 375px) {
   .card:nth-child(7) .card__text {
     max-width: 317px;
   }
 }
+
+
 .like-icon {
   width: inherit;
   height: inherit;
@@ -259,57 +314,70 @@ main {
   z-index: 1;
 }
 
+
 .like-icon .heart {
   transition: fill 0.1s;
   transform-origin: center center;
 }
 
+
 .like-icon .contour {
   fill: var(--text-color);
 }
+
 
 .like-icon .main-body {
   fill: var(--page-background);
   transition: fill 0.3s linear;
 }
 
+
 .like-icon .core {
   fill: var(--page-background);
   transition: fill 0.3s 0.05s;
 }
+
 
 .like-icon .sparks {
   opacity: 0;
   fill: var(--heart-color);
 }
 
+
 .like-icon:hover .main-body {
   fill: var(--text-color);
 }
+
 
 .like-icon:hover .core {
   fill: var(--text-color);
 }
 
+
 .like-icon:active .main-body {
   fill: var(--heart-color);
 }
+
 
 .like-icon:active .core {
   fill: var(--heart-color);
 }
 
+
 .like-icon.is-liked .contour {
   fill: var(--heart-color);
 }
+
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-color);
 }
 
+
 .like-icon.is-liked .core {
   fill: var(--heart-color);
 }
+
 
 .button {
   font-family: var(--fantasy-font-family);
@@ -322,10 +390,14 @@ main {
   border: 2px solid var(--stroke-color);
   transition: all 0.5s ease-in-out 0s;
 }
+
+
 .button__text {
   color: var(--mix-blend-color);
   mix-blend-mode: difference;
 }
+
+
 .button::before {
   content: "";
   position: absolute;
@@ -340,17 +412,21 @@ main {
   transition: transform 0.5s ease-in-out;
 }
 
+
 .button:hover::before {
   transform: translateX(0);
 }
+
 
 .button:focus {
   outline: none;
 }
 
+
 .button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--text-color);
 }
+
 
 .save-button {
   display: flex;
@@ -360,12 +436,15 @@ main {
   gap: 8px;
   background: var(--page-background);
 }
+
+
 .ok-button {
   text-transform: uppercase;
   width: 100%;
   padding: 10px 0;
   background: var(--page-background);
 }
+
 
 .dialog {
   font-family: var(--fantasy-font-family);
@@ -376,9 +455,11 @@ main {
   border: 2px solid var(--stroke-color);
 }
 
+
 .dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
+
 
 .dialog:not([open]) {
   display: none;
@@ -386,17 +467,20 @@ main {
   pointer-events: none;
 }
 
+
 .dialog__container {
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 
+
 @media (width <= 375px) {
   .dialog__container {
     gap: 28px;
   }
 }
+
 
 .dialog__text {
   text-transform: uppercase;
@@ -405,11 +489,13 @@ main {
   width: 100%;
 }
 
+
 .dialog__text-container {
   display: flex;
   gap: 22px;
   align-items: center;
 }
+
 
 @media (width <= 375px) {
   .dialog__text {
@@ -424,12 +510,14 @@ main {
   mix-blend-mode: difference;
 }
 
+
 @media (width <= 375px) {
   .floppy-image {
     width: 28px;
     height: 28px;
   }
 }
+
 
 .dialog .floppy-image {
   width: 39px;
