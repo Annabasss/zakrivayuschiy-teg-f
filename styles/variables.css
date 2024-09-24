@@ -1,10 +1,5 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root {
-    --main-font-family: Inter, sans-serif;
-    --fantasy-font-family: "Press Start 2P", fantasy;
-    --heart-color: #ff0000;
-  }
-  
+
   @media (prefers-color-scheme: light) {
     :root {
       --page-background: #fff;
@@ -27,8 +22,8 @@
       --background-color: var(--page-background);
       --background-color-start: #007f0c;
       --background-color-end: #004306;
-      --title-font-weight: "wght" 700;
-      --text-font-weight: "wght" 400;
+      --title-font-weight: "wght" 785;
+      --text-font-weight: "wght" 465;
       --header-background: var(--page-background);
       --text-color: #00cc14;
       --mix-blend-color: var(--text-color);

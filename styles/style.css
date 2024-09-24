@@ -56,7 +56,8 @@
 .header__link {
   font-size: clamp(3.063rem, 2.348rem + 1.905vw, 4.063rem);
   text-transform: uppercase;
-  text-decoration: none
+  text-decoration: none;
+  outline: none;
 }
 
 
@@ -316,29 +317,29 @@ main {
 
 
 .like-icon .heart {
-  transition: fill 0.1s;
   transform-origin: center center;
 }
 
 
 .like-icon .contour {
   fill: var(--text-color);
+  transition: fill 0.1s linear 0s;
 }
 
 
 .like-icon .main-body {
   fill: var(--page-background);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.05s;
 }
 
 
 .like-icon .core {
   fill: var(--page-background);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s linear 0s;
 }
 
 
-.like-icon .sparks {
+.sparks {
   opacity: 0;
   fill: var(--heart-color);
 }
@@ -435,6 +436,13 @@ main {
   margin: 0px auto 100px;
   gap: 8px;
   background: var(--page-background);
+}
+
+
+@media (width <= 375px) {
+  .save-button {
+    flex-direction: column;
+  }
 }
 
 

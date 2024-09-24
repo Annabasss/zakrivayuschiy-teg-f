@@ -4,6 +4,11 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root {
+  --main-font-family: "Inter", sans-serif;
+  --fantasy-font-family: "Press Start 2P", fantasy;
+  --heart-color: #ff0000;
+}
 
 
 :root.theme-light {
@@ -25,8 +30,8 @@
     --background-color: var(--page-background);
     --background-color-start: #007f0c;
     --background-color-end: #004306;
-    --title-font-weight: "wght" 700;
-    --text-font-weight: "wght" 400;
+    --title-font-weight: "wght" 785;
+    --text-font-weight: "wght" 465;
     --header-background: var(--page-background);
     --text-color: #00cc14;
     --mix-blend-color: var(--text-color);
