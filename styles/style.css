@@ -15,7 +15,7 @@
 */
 
 .page {
-  font-variation-settings: var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -38,7 +38,6 @@
     var(--background-color-start) 0.01%,
     var(--background-color-end)
   );
-  font-variation-settings: var(--text-font-weight);
   background-attachment: fixed;
   background-size: cover;
 }
